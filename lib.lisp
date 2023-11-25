@@ -85,7 +85,7 @@
                                             (redraw-display)))
                               (floor (* (sprite-spec-animation-interval-seconds (sprite-spec sprite))
                                         1000))
-                              t)))
+                              :repeat t)))
       (setf (sprite-timer sprite) timer)
       (values)))
   (push sprite *all-sprites*))
